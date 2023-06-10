@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gabriela&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Fredericka+the+Great&family=Gabriela&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; 
+}
+
+/* header */
+.header {
+  background-image: url("../images/banner.png");
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header .logo {
+  width: 150px;
+}
+.header p {
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: right;
+  font-weight: 600;
+}
+.header h5 {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.header .nav-item .nav-link {
+  color: #000;
+  font-weight: 700;
+  font-size: 13px;
+  padding-left: 35px;
+}
+.header .nav-item .nav-link:hover {
+  color: #000;
+}
+
+.header .banner h3 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 40px;
+}
+.header .banner h2 {
+  font-family: "Fredericka the Great", cursive;
+  margin-bottom: 0;
+  padding: 6px 0;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+hr {
+  width: 50%;
+  margin: 0 auto;
+}
+.header .banner h4 {
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+.header .banner p {
+  margin-bottom: 0;
+  font-family: "Fredericka the Great", cursive;
+  line-height: 16px;
+  font-size: 13px;
+}
+.header .banner span {
+  font-family: "Fredericka the Great", cursive;
+  margin-bottom: 0;
+  font-size: 35px;
+}
+.mybtn {
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 5px 25px;
+  border: 0;
+  border: 1px solid black;
+}
+.mybtn:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+/* media queries */
+@media only screen and (max-width: 991px) {
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(../images/toggle_btn.svg);
+  }
+  .my_navbar {
+    padding-top: 20px;
+  }
+  .navbar-light .navbar-toggler {
+    color: inherit !important;
+    border-color: transparent !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: inherit !important;
+  }
+  .header .nav-item .nav-link {
+    padding-left: 0px;
+  }
+  .header {
+    height: auto;
+  }
+  .header .banner.pt-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .header .banner.mt-5 {
+    margin-top: 0rem !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .header .logo {
+    width: 120px;
+  }
+  .header .banner h2 {
+    font-size: 50px;
+  }
+}
+
+/* three_sec */
+.three_sec .heading h2 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.three_sec .heading p {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.three_sec .box .box_img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.three_sec .box h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.three_sec .box p {
+  max-width: 350px;
+  margin: 20px auto;
+}
+.three_sec .s_btn {
+  background-color: #ffe001;
+  border: 0;
+  padding: 10px 30px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 991px) {
+  .three_sec .box {
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .three_sec .heading h2 {
+    font-size: 34px;
+  }
+}
+
+/* discover_sec */
+.discover_sec .discover_heading h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.discover_sec .discover_heading h2 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.discover_sec .discover_heading p {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.slide_box {
+  max-width: 100%;
+}
+.slide_box img {
+  width: 100%;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #ffe001;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+@media only screen and (max-width: 575px) {
+  .discover_sec .discover_heading h2 {
+    font-size: 32px;
+  }
+}
+
+/* images_sec */
+.images_sec {
+  color: #fff;
+  text-transform: uppercase;
+}
+.images_sec h5 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.images_sec h4 {
+  margin-bottom: 0;
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 3px;
+}
+.images_sec .images_box_r,
+.images_sec .images_box_l {
+  position: relative;
+}
+.images_sec .images_box_r .right_text,
+.images_sec .images_box_l .left_text {
+  position: absolute;
+  top: 30px;
+  left: 43px;
+}
+.images_sec .images_box_l .leftBox_bottom {
+  position: relative;
+}
+.images_sec .images_box_l .leftBox_bottom .left_text_bottom {
+  position: absolute;
+  top: 30px;
+  left: 32px;
+}
+
+/* media queries */
+@media only screen and (max-width: 991px) {
+  .images_sec .images_box_r {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .images_sec h5 {
+    font-size: 14px;
+  }
+  .images_sec h4 {
+    font-size: 20px;
+  }
+  .images_sec .images_box_r .right_text,
+  .images_sec .images_box_l .left_text {
+    top: 20px;
+  }
+  .images_sec .images_box_l .leftBox_bottom .left_text_bottom {
+    top: 20px;
+  }
+}
+
+/* reservation sec */
+.reservation .reservation_heading h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.reservation .reservation_heading h2 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.reservation .f_btn {
+  border: 0;
+  background-color: #ffe001;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+}
+@media only screen and (max-width: 575px) {
+  .reservation .reservation_heading h2 {
+    font-size: 32px;
+  }
+}
+
+/* footer */
+.footer {
+  background-image: url(../images/footer_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.footer .footer_logo {
+  width: 160px;
+}
+.footer .address i {
+  color: #ffe001;
+  font-size: 24px;
+}
+.footer .address p {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.footer .social a {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #fff;
+  margin: 5px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.footer .social i {
+  position: absolute;
+  top: 6px;
+  left: 9px;
+}
+
+/* media queries */
+@media only screen and (max-width: 991px) {
+  .footer .footer_box {
+    justify-content: inherit !important;
+  }
+  .footer .social {
+    justify-content: inherit !important;
+  }
+  .footer .copyright {
+    padding-top: 10px !important;
+  }
+  .footer .footer_box {
+    padding-top: 20px !important;
+  }
+  .footer .social {
+    padding-top: 20px !important;
+    margin-left: -4px;
+  }
+}
+
+
+
